@@ -12,11 +12,11 @@
 <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAUAAAAF////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAIAAABbAAAAlQAAAKIAAACbAAAAmwAAAKIAAACVAAAAWwAAAAL///8A////AP///wD///8A////AAAAABQAAADAAAAAYwAAAA3///8A////AP///wD///8AAAAADQAAAGMAAADAAAAAFP///wD///8A////AP///wAAAACdAAAAOv///wD///8A////AP///wD///8A////AP///wD///8AAAAAOgAAAJ3///8A////AP///wAAAAAnAAAAcP///wAAAAAoAAAASv///wD///8A////AP///wAAAABKAAAAKP///wAAAABwAAAAJ////wD///8AAAAAgQAAABwAAACIAAAAkAAAAJMAAACtAAAAFQAAABUAAACtAAAAkwAAAJAAAACIAAAAHAAAAIH///8A////AAAAAKQAAACrAAAAaP///wD///8AAAAARQAAANIAAADSAAAARf///wD///8AAAAAaAAAAKsAAACk////AAAAADMAAACcAAAAnQAAABj///8A////AP///wAAAAAYAAAAGP///wD///8A////AAAAABgAAACdAAAAnAAAADMAAAB1AAAAwwAAAP8AAADpAAAAsQAAAE4AAAAb////AP///wAAAAAbAAAATgAAALEAAADpAAAA/wAAAMMAAAB1AAAAtwAAAOkAAAD/AAAA/wAAAP8AAADvAAAA3gAAAN4AAADeAAAA3gAAAO8AAAD/AAAA/wAAAP8AAADpAAAAtwAAAGUAAAA/AAAA3wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADfAAAAPwAAAGX///8A////AAAAAEgAAADtAAAAvwAAAL0AAADGAAAA7wAAAO8AAADGAAAAvQAAAL8AAADtAAAASP///wD///8A////AP///wD///8AAAAAO////wD///8A////AAAAAIcAAACH////AP///wD///8AAAAAO////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A//8AAP//AAD4HwAA7/cAAN/7AAD//wAAoYUAAJ55AACf+QAAh+EAAAAAAADAAwAA4AcAAP5/AAD//wAA//8AAA=="/>
 
 <!-- Google fonts -->
-<link href='https://fonts.googleapis.com/css?family=Lato:400,600,900' rel='stylesheet' type='text/css'/>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,600,900' rel='stylesheet' type='text/css'/>
 <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600' rel='stylesheet' type='text/css'/>
 
 <!-- CSS -->
-<title>BFC</title>
+<title>Module BFC</title>
 <style type="text/css" >
 /*
 Stylesheet for use with Docutils/rst2html.
@@ -45,19 +45,18 @@ html {
 
 /* Where we want fancier font if available */
 h1, h2, h3, h4, h5, h6, p.module-desc, table.docinfo + blockquote p, table.docinfo blockquote p, h1 + blockquote p {
-  font-family: "Lato", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif !important; }
+  font-family: "Raleway", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif !important; }
 
 h1.title {
   font-weight: 900; }
 
 body {
-  font-family: "Lato", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Raleway", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
-  color: #444;
-  letter-spacing: 0.15px;
-  background-color: #FDFBFA; }
+  color: #666;
+  background-color: rgba(252, 248, 244, 0.75); }
 
 /* Skeleton grid */
 .container {
@@ -173,8 +172,8 @@ cite {
   font-style: italic !important; }
 
 dt > pre {
-  border-color: rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(0, 0, 0, 0.15);
+  background-color: transparent;
   margin: 15px 0px 5px; }
 
 dd > pre {
@@ -190,17 +189,6 @@ dd > pre {
 .line-nums-table {
   width: 100%;
   table-layout: fixed; }
-
-/* Nim search input */
-div#searchInputDiv {
-  margin-bottom: 8px;
-}
-div#searchInputDiv input#searchInput {
-  width: 10em;
-}
-div.search-groupby {
-  margin-bottom: 8px;
-}
 
 table.line-nums-table {
   border-radius: 4px;
@@ -345,7 +333,7 @@ img {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
 
 p {
-  margin: 0 0 8px; }
+  margin: 0 0 12px; }
 
 small {
   font-size: 85%; }
@@ -365,7 +353,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Raleway", Helvetica, Arial, sans-serif;
   font-weight: 600;
   line-height: 20px;
   color: inherit;
@@ -373,7 +361,6 @@ h6 {
 
 h1 {
   font-size: 2em;
-  font-weight: 400;
   padding-bottom: .15em;
   border-bottom: 1px solid #aaaaaa;
   margin-top: 1.0em;
@@ -504,13 +491,13 @@ pre {
   box-sizing: border-box;
   min-width: calc(100% - 19.5px);
   padding: 9.5px;
-  margin: 0.25em 10px 10px 10px;
-  font-size: 15px;
+  margin: 0.25em 10px 0.25em 10px;
+  font-size: 14px;
   line-height: 20px;
   white-space: pre !important;
   overflow-y: hidden;
   overflow-x: visible;
-  background-color: rgba(0, 0, 0, 0.01);
+  background-color: whitesmoke;
   border: 1px solid #cccccc;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -789,14 +776,14 @@ div.admonition p.admonition-title, div.hint p.admonition-title,
 div.important p.admonition-title, div.note p.admonition-title,
 div.tip p.admonition-title {
   font-weight: bold;
-  font-family: "Lato", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", "HelveticaNeue", "Raleway", Helvetica, Arial, sans-serif; }
 
 div.attention p.admonition-title, div.caution p.admonition-title,
 div.danger p.admonition-title, div.error p.admonition-title,
 div.warning p.admonition-title, .code .error {
   color: #b30000;
   font-weight: bold;
-  font-family: "Lato", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", "HelveticaNeue", "Raleway", Helvetica, Arial, sans-serif; }
 
 /* Uncomment (and remove this text!) to get reduced vertical space in
    compound paragraphs.
@@ -843,7 +830,7 @@ div.sidebar {
   clear: right; }
 
 div.sidebar p.rubric {
-  font-family: "Lato", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Raleway", Helvetica, Arial, sans-serif;
   font-size: medium; }
 
 div.system-messages {
@@ -950,12 +937,12 @@ p.rubric {
   text-align: center; }
 
 p.sidebar-title {
-  font-family: "Lato", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Raleway", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: larger; }
 
 p.sidebar-subtitle {
-  font-family: "Lato", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Raleway", Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
 p.topic-title {
@@ -997,15 +984,15 @@ pre.code .inserted, code .inserted {
   background-color: #A3D289; }
 
 span.classifier {
-  font-family: "Lato", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Raleway", Helvetica, Arial, sans-serif;
   font-style: oblique; }
 
 span.classifier-delimiter {
-  font-family: "Lato", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Raleway", Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
 span.interpreted {
-  font-family: "Lato", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", "HelveticaNeue", "Raleway", Helvetica, Arial, sans-serif; }
 
 span.option {
   white-space: nowrap; }
@@ -1028,7 +1015,7 @@ table.docinfo {
   margin: 0em;
   margin-top: 2em;
   margin-bottom: 2em;
-  font-family: "Lato", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif !important;
+  font-family: "Raleway", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif !important;
   color: #444444; }
 
 table.docutils {
@@ -1143,7 +1130,7 @@ dt pre > span.Identifier ~ span.Identifier, dt pre > span.Operator ~ span.Identi
   color: inherit;
   font-weight: inherit; }
 
-dt pre > span.Operator ~ span.Identifier {
+dt pre > span.Operator ~ span.Identifier, dt pre > span.Operator ~ span.Operator {
   color: inherit;
   font-weight: inherit; }
 
@@ -1158,6 +1145,15 @@ dt pre > span.Operator ~ span.Identifier {
   background-repeat: no-repeat;
   background-image: url("data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAUAAAAF////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAIAAABbAAAAlQAAAKIAAACbAAAAmwAAAKIAAACVAAAAWwAAAAL///8A////AP///wD///8A////AAAAABQAAADAAAAAYwAAAA3///8A////AP///wD///8AAAAADQAAAGMAAADAAAAAFP///wD///8A////AP///wAAAACdAAAAOv///wD///8A////AP///wD///8A////AP///wD///8AAAAAOgAAAJ3///8A////AP///wAAAAAnAAAAcP///wAAAAAoAAAASv///wD///8A////AP///wAAAABKAAAAKP///wAAAABwAAAAJ////wD///8AAAAAgQAAABwAAACIAAAAkAAAAJMAAACtAAAAFQAAABUAAACtAAAAkwAAAJAAAACIAAAAHAAAAIH///8A////AAAAAKQAAACrAAAAaP///wD///8AAAAARQAAANIAAADSAAAARf///wD///8AAAAAaAAAAKsAAACk////AAAAADMAAACcAAAAnQAAABj///8A////AP///wAAAAAYAAAAGP///wD///8A////AAAAABgAAACdAAAAnAAAADMAAAB1AAAAwwAAAP8AAADpAAAAsQAAAE4AAAAb////AP///wAAAAAbAAAATgAAALEAAADpAAAA/wAAAMMAAAB1AAAAtwAAAOkAAAD/AAAA/wAAAP8AAADvAAAA3gAAAN4AAADeAAAA3gAAAO8AAAD/AAAA/wAAAP8AAADpAAAAtwAAAGUAAAA/AAAA3wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADfAAAAPwAAAGX///8A////AAAAAEgAAADtAAAAvwAAAL0AAADGAAAA7wAAAO8AAADGAAAAvQAAAL8AAADtAAAASP///wD///8A////AP///wD///8AAAAAO////wD///8A////AAAAAIcAAACH////AP///wD///8AAAAAO////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A//8AAP//AAD4HwAA7/cAAN/7AAD//wAAoYUAAJ55AACf+QAAh+EAAAAAAADAAwAA4AcAAP5/AAD//wAA//8AAA==");
   margin-bottom: -5px; }
+  div.pragma {
+    display: none;
+  }
+  span.pragmabegin {
+    cursor: pointer;
+  }
+  span.pragmaend {
+    cursor: pointer;
+  }
 
 div.search_results {
   background-color: antiquewhite;
@@ -1165,52 +1161,32 @@ div.search_results {
   padding: 1em;
   border: 1px solid #4d4d4d;
 }
-
-div#global-links ul {
-  margin-left: 0;
-  list-style-type: none;
-}
-
-span.pragmadots {
-  /* Position: relative frees us up to make the dots
-  look really nice without fucking up the layout and
-  causing bulging in the parent container */
-  position: relative;
-  /* 1px down looks slightly nicer */
-  top: 1px;
-
-  padding: 2px;
-  background-color: #D3D3D3;
-  border-radius: 4px;
-  margin: 0 2px;
-  cursor: pointer;
-
-  /* For some reason on Chrome, making the font size
-  smaller than 1em is causing the parent container to
-  bulge slightly. So, we're stuck with inheriting 1em,
-  which is sad, because 0.8em looks better... */
-}
-span.pragmadots:hover {
-  background-color: #DBDBDB;
-}
-span.pragmawrap {
-  display: none;
-}
-
 </style>
 
-<script type="text/javascript" src="dochack.js"></script>
+<script type="text/javascript" src="../dochack.js"></script>
 
 <script type="text/javascript">
+function togglepragma(d) {
+  if (d.style.display != 'inline')
+    d.style.display = 'inline';
+  else
+    d.style.display = 'none';
+}
+
 function main() {
-  var pragmaDots = document.getElementsByClassName("pragmadots");
-  for (var i = 0; i < pragmaDots.length; i++) {
-    pragmaDots[i].onclick = function(event) {
-      // Hide tease
-      event.target.parentNode.style.display = "none";
-      // Show actual
-      event.target.parentNode.nextElementSibling.style.display = "inline";
-    }
+  var elements = document.getElementsByClassName("pragmabegin");
+  for (var i = 0; i < elements.length; ++i) {
+    var e = elements[i];
+    e.onclick = function(event) {
+      togglepragma(event.target.nextSibling);
+    };
+  }
+  var elements = document.getElementsByClassName("pragmaend");
+  for (var i = 0; i < elements.length; ++i) {
+    var e = elements[i];
+    e.onclick = function(event) {
+      togglepragma(event.target.previousSibling);
+    };
   }
 }
 </script>
@@ -1219,14 +1195,10 @@ function main() {
 <body onload="main()">
 <div class="document" id="documentId">
   <div class="container">
-    <h1 class="title">BFC</h1>
+    <h1 class="title">Module BFC</h1>
     <div class="row">
   <div class="three columns">
-  <div id="global-links">
-    <ul class="simple">
-    </ul>
-  </div>
-  <div id="searchInputDiv">
+  <div>
     Search: <input type="text" id="searchInput"
       onkeyup="search()" />
   </div>
@@ -1239,23 +1211,28 @@ function main() {
   </div>
   <ul class="simple simple-toc" id="toc-list">
 <li>
+  <a class="reference reference-toplevel" href="#6" id="56">Imports</a>
+  <ul class="simple simple-toc-section">
+    
+  </ul>
+</li>
+<li>
   <a class="reference reference-toplevel" href="#12" id="62">Procs</a>
   <ul class="simple simple-toc-section">
-      <li><a class="reference" href="#depthScanLoop%2Cstring%2Cint%2Cint%2Cint%2Cint%2Cint%2Cbool"
-    title="depthScanLoop(code: string; startIndex: int;
-              oldLoop, maxDepth, newIndex, currentDepth: var int; verbose: bool)"><wbr />depth<wbr />Scan<wbr />Loop<span class="attachedType" style="visibility:hidden"></span></a></li>
-  <li><a class="reference" href="#depthScan%2Cstring%2Cbool"
-    title="depthScan(code: string; verbose: bool): int"><wbr />depth<wbr />Scan<span class="attachedType" style="visibility:hidden"></span></a></li>
-  <li><a class="reference" href="#operandCombiner%2Cstring%2Cint%2Cint%2Cint%2Cstring%2Cchar%2Cstring%2Cstring"
-    title="operandCombiner(code: string; currentIndex: int; trueIndex, tapLevel: var int;
-                result: var string; operand: char; operandCode: string;
-                operandCodeMulti: string)"><wbr />operand<wbr />Combiner<span class="attachedType" style="visibility:hidden"></span></a></li>
-  <li><a class="reference" href="#generateCodeC%2Cstring%2Cbool%2Cbool"
-    title="generateCodeC(code: string; staticDepth: bool; verbose: bool): string"><wbr />generate<wbr />Code<wbr />C<span class="attachedType" style="visibility:hidden"></span></a></li>
-  <li><a class="reference" href="#generateCode%2Cstring%2Cstring%2Cbool%2Cbool"
-    title="generateCode(code: string; lang: string = &quot;C&quot;; staticDepth: bool; verbose: bool): string"><wbr />generate<wbr />Code<span class="attachedType" style="visibility:hidden"></span></a></li>
-  <li><a class="reference" href="#userInput%2C"
-    title="userInput()"><wbr />user<wbr />Input<span class="attachedType" style="visibility:hidden"></span></a></li>
+      <li><a class="reference" href="#depthScanLoop,string,int,int,int,int,int,bool"
+    title="depthScanLoop*(code: string; startIndex: int;
+               oldLoop, maxDepth, newIndex, currentDepth: var int; verbose: bool)"><wbr />depth<wbr />Scan<wbr />Loop<span class="attachedType" style="visibility:hidden"></span></a></li>
+  <li><a class="reference" href="#depthScan,string,bool"
+    title="depthScan*(code: string; verbose: bool): int"><wbr />depth<wbr />Scan<span class="attachedType" style="visibility:hidden"></span></a></li>
+  <li><a class="reference" href="#operandCombiner,string,int,int,string,char,string,string"
+    title="operandCombiner*(code: string; index, tapLevel: var int; result: var string;
+                 operand: char; operandCode: string; operandCodeMulti: string)"><wbr />operand<wbr />Combiner<span class="attachedType" style="visibility:hidden"></span></a></li>
+  <li><a class="reference" href="#generateCodeC,string,bool,bool"
+    title="generateCodeC*(code: string; staticDepth: bool; verbose: bool): string"><wbr />generate<wbr />Code<wbr />C<span class="attachedType" style="visibility:hidden"></span></a></li>
+  <li><a class="reference" href="#generateCode,string,string,bool,bool"
+    title="generateCode*(code: string; lang: string = &quot;C&quot;; staticDepth: bool; verbose: bool): string"><wbr />generate<wbr />Code<span class="attachedType" style="visibility:hidden"></span></a></li>
+  <li><a class="reference" href="#userInput,"
+    title="userInput*()"><wbr />user<wbr />Input<span class="attachedType" style="visibility:hidden"></span></a></li>
 
   </ul>
 </li>
@@ -1266,13 +1243,16 @@ function main() {
   <div class="nine columns" id="content">
   <div id="tocRoot"></div>
   <p class="module-desc"></p>
-  <div class="section" id="12">
+  <div class="section" id="6">
+<h1><a class="toc-backref" href="#6">Imports</a></h1>
+<dl class="item">
+<a class="reference external" href="os.html">os</a>, <a class="reference external" href="/libs/files/src/files.html">/libs/files/src/files</a>, <a class="reference external" href="/libs/strutil/src/strutil.html">/libs/strutil/src/strutil</a>
+</dl></div>
+<div class="section" id="12">
 <h1><a class="toc-backref" href="#12">Procs</a></h1>
 <dl class="item">
-<a id="depthScanLoop,string,int,int,int,int,int,bool"></a>
-<dt><pre><span class="Keyword">proc</span> <span class="Identifier">depthScanLoop</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">startIndex</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">;</span>
-                  <span class="Identifier">oldLoop</span><span class="Other">,</span> <span class="Identifier">maxDepth</span><span class="Other">,</span> <span class="Identifier">newIndex</span><span class="Other">,</span> <span class="Identifier">currentDepth</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">int</span><span class="Other">;</span> <span class="Identifier">verbose</span><span class="Other">:</span> <span class="Identifier">bool</span><span class="Other">)</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
-    <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt id="depthScanLoop"><a name="depthScanLoop,string,int,int,int,int,int,bool"></a><pre><span class="Keyword">proc</span> <span class="Identifier">depthScanLoop</span><span class="Operator">*</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">startIndex</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">;</span>
+                   <span class="Identifier">oldLoop</span><span class="Other">,</span> <span class="Identifier">maxDepth</span><span class="Other">,</span> <span class="Identifier">newIndex</span><span class="Other">,</span> <span class="Identifier">currentDepth</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">int</span><span class="Other">;</span> <span class="Identifier">verbose</span><span class="Other">:</span> <span class="Identifier">bool</span><span class="Other">)</span></pre></dt>
 <dd>
 <table class="docinfo" frame="void" rules="none"><col class="docinfo-name" /><col class="docinfo-content" /><tbody valign="top"><tr><th class="docinfo-name">USAGE:</th><td> depthScanLoop(code: string, startIndex: int, oldLoop, maxDepth, newIndex, currentDepth: var int, verbose: bool)</td></tr>
 <tr><th class="docinfo-name">BEHAVIOR:</th><td>  Goes through each operand in the code, to determin the amount of cells needed to run the code.</td></tr>
@@ -1286,8 +1266,7 @@ function main() {
 </tbody></table>
 
 </dd>
-<a id="depthScan,string,bool"></a>
-<dt><pre><span class="Keyword">proc</span> <span class="Identifier">depthScan</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">verbose</span><span class="Other">:</span> <span class="Identifier">bool</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt id="depthScan"><a name="depthScan,string,bool"></a><pre><span class="Keyword">proc</span> <span class="Identifier">depthScan</span><span class="Operator">*</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">verbose</span><span class="Other">:</span> <span class="Identifier">bool</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span></pre></dt>
 <dd>
 <table class="docinfo" frame="void" rules="none"><col class="docinfo-name" /><col class="docinfo-content" /><tbody valign="top"><tr><th class="docinfo-name">USAGE:</th><td> depthScan(code: string, verbose: bool)</td></tr>
 <tr><th class="docinfo-name">BEHAVIOR:</th><td> The top level function for keeping track of depthScan</td></tr>
@@ -1296,16 +1275,13 @@ function main() {
 </tbody></table>
 
 </dd>
-<a id="operandCombiner,string,int,int,int,string,char,string,string"></a>
-<dt><pre><span class="Keyword">proc</span> <span class="Identifier">operandCombiner</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">currentIndex</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">;</span> <span class="Identifier">trueIndex</span><span class="Other">,</span> <span class="Identifier">tapLevel</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">int</span><span class="Other">;</span>
-                    <span class="Identifier">result</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">operand</span><span class="Other">:</span> <span class="Identifier">char</span><span class="Other">;</span> <span class="Identifier">operandCode</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
-                    <span class="Identifier">operandCodeMulti</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt id="operandCombiner"><a name="operandCombiner,string,int,int,string,char,string,string"></a><pre><span class="Keyword">proc</span> <span class="Identifier">operandCombiner</span><span class="Operator">*</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">index</span><span class="Other">,</span> <span class="Identifier">tapLevel</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">int</span><span class="Other">;</span> <span class="Identifier">result</span><span class="Other">:</span> <span class="Keyword">var</span> <span class="Identifier">string</span><span class="Other">;</span>
+                     <span class="Identifier">operand</span><span class="Other">:</span> <span class="Identifier">char</span><span class="Other">;</span> <span class="Identifier">operandCode</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">operandCodeMulti</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span></pre></dt>
 <dd>
 <table class="docinfo" frame="void" rules="none"><col class="docinfo-name" /><col class="docinfo-content" /><tbody valign="top"><tr><th class="docinfo-name">USAGE:</th><td> operandCombiner(code: string, currentIndex: int, trueIndex, tapLevel: var int, result: var string, operand: char, operandCode: string, operandCodeMulti: string)</td></tr>
 <tr><th class="docinfo-name">BEHAVIOR:</th><td> Combines operands of the same type, and adds the the combined operands to result.</td></tr>
 <tr><th class="docinfo-name">code:</th><td> The code to scan through.</td></tr>
-<tr><th class="docinfo-name">currentIndex:</th><td> Used to keep track of the loops index.</td></tr>
-<tr><th class="docinfo-name">trueIndex:</th><td> Used to keep track of the real index.</td></tr>
+<tr><th class="docinfo-name">index:</th><td> Used to keep track of the current location in the code.</td></tr>
 <tr><th class="docinfo-name">tapLevels:</th><td> Used to keep track of indetation.</td></tr>
 <tr><th class="docinfo-name">result:</th><td> Used to store the generated code.</td></tr>
 <tr><th class="docinfo-name">operand:</th><td> The operand to combine.</td></tr>
@@ -1314,9 +1290,7 @@ function main() {
 </tbody></table>
 
 </dd>
-<a id="generateCodeC,string,bool,bool"></a>
-<dt><pre><span class="Keyword">proc</span> <span class="Identifier">generateCodeC</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">staticDepth</span><span class="Other">:</span> <span class="Identifier">bool</span><span class="Other">;</span> <span class="Identifier">verbose</span><span class="Other">:</span> <span class="Identifier">bool</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span>
-    <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt id="generateCodeC"><a name="generateCodeC,string,bool,bool"></a><pre><span class="Keyword">proc</span> <span class="Identifier">generateCodeC</span><span class="Operator">*</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">staticDepth</span><span class="Other">:</span> <span class="Identifier">bool</span><span class="Other">;</span> <span class="Identifier">verbose</span><span class="Other">:</span> <span class="Identifier">bool</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span></pre></dt>
 <dd>
 <table class="docinfo" frame="void" rules="none"><col class="docinfo-name" /><col class="docinfo-content" /><tbody valign="top"><tr><th class="docinfo-name">USAGE:</th><td> generateCodeC(code: string, staticDepth: bool, verbose: bool)</td></tr>
 <tr><th class="docinfo-name">BEHAVIOR:</th><td> Used to go through each operand of brainfuck and generate C code</td></tr>
@@ -1326,9 +1300,7 @@ function main() {
 </tbody></table>
 
 </dd>
-<a id="generateCode,string,string,bool,bool"></a>
-<dt><pre><span class="Keyword">proc</span> <span class="Identifier">generateCode</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">lang</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;C&quot;</span><span class="Other">;</span> <span class="Identifier">staticDepth</span><span class="Other">:</span> <span class="Identifier">bool</span><span class="Other">;</span> <span class="Identifier">verbose</span><span class="Other">:</span> <span class="Identifier">bool</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
-    <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt id="generateCode"><a name="generateCode,string,string,bool,bool"></a><pre><span class="Keyword">proc</span> <span class="Identifier">generateCode</span><span class="Operator">*</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">lang</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Other">=</span> <span class="StringLit">&quot;C&quot;</span><span class="Other">;</span> <span class="Identifier">staticDepth</span><span class="Other">:</span> <span class="Identifier">bool</span><span class="Other">;</span> <span class="Identifier">verbose</span><span class="Other">:</span> <span class="Identifier">bool</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span></pre></dt>
 <dd>
 <table class="docinfo" frame="void" rules="none"><col class="docinfo-name" /><col class="docinfo-content" /><tbody valign="top"><tr><th class="docinfo-name">USAGE:</th><td> generateCode(code: string, lang: string, staticDepth: bool, verbose: bool)</td></tr>
 <tr><th class="docinfo-name">BEHAVIOR:</th><td> Used to select the output language.</td></tr>
@@ -1339,8 +1311,7 @@ function main() {
 </tbody></table>
 
 </dd>
-<a id="userInput,"></a>
-<dt><pre><span class="Keyword">proc</span> <span class="Identifier">userInput</span><span class="Other">(</span><span class="Other">)</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">,</span> <span class="Identifier">IOError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ReadIOEffect</span><span class="Other">,</span> <span class="Identifier">WriteIOEffect</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt id="userInput"><a name="userInput,"></a><pre><span class="Keyword">proc</span> <span class="Identifier">userInput</span><span class="Operator">*</span><span class="Other">(</span><span class="Other">)</span></pre></dt>
 <dd>
 <table class="docinfo" frame="void" rules="none"><col class="docinfo-name" /><col class="docinfo-content" /><tbody valign="top"><tr><th class="docinfo-name">USAGE:</th><td> userInput()</td></tr>
 <tr><th class="docinfo-name">BEHAVIOR:</th><td> Takes user input and parses it.</td></tr>
@@ -1357,7 +1328,7 @@ function main() {
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small>Made with Nim. Generated: 2019-04-01 18:54:34 UTC</small>
+        <small>Made with Nim. Generated: 2019-04-02 07:26:56 UTC</small>
       </div>
     </div>
   </div>
